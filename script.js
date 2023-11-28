@@ -1,5 +1,6 @@
 'use strict';
 
+const btn = document.getElementById('btn');
 const square = document.getElementById('square');
 const eBtn = document.getElementById('e_btn');
 const circle = document.getElementById('circle');
@@ -18,6 +19,6 @@ const changeHeightWidth = function () {
   circle.style.cssText = `height: ${rangeSpan.textContent}%; width:${rangeSpan.textContent}%`;
 };
 
-square.addEventListener('click', changeColor);
+btn.addEventListener('click', changeColor);
 range.addEventListener('input', changeHeightWidth);
 eBtn.style.cssText = 'display: none';
